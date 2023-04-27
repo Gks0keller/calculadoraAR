@@ -17,7 +17,7 @@ export class CalculadoraComponent {
         }else if(conteudo=="Apagar"){
             this.apagar()
         }else if(conteudo=="="){
-            this.digitado=eval(this.digitado)
+            this.digitado=eval(this.digitado).toString()
         } else{
             this.digitado+=conteudo;
         }
